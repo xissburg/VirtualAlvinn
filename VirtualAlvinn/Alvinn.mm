@@ -154,6 +154,45 @@ int Alvinn::Initialize()
 	return 1;
 }
 
+void Alvinn::TrainANN()
+{
+    if(driver == D_HUMAN)
+    {
+        std::cout << "ANN is going to be trained, please wait..." << std::endl;
+        td.set_train_data(numSamples, numInputs, input, numOutputs, output);
+        td.shuffle_train_data();
+        ann.train_on_data(td, 100, 5, 0.f);
+        std::cout << std::endl << "ANN is trained." << std::endl;
+    }
+}
+
+void Alvinn::ToggleCapture()
+{
+    if(driver == D_HUMAN)
+    {
+        sample = !sample;
+        std::cout << (sample? "Capturing...": "Stopped capturing.") << std::endl;
+    }
+}
+
+void Alvinn::ToggleDriver()
+{
+    if(driver == D_HUMAN)
+    {
+        driver = D_ANN;
+        world.GetVehicle()->SetWheelColor(btVector3(0.27f,1.f,1.f));
+    }
+    else
+    {
+        driver = D_HUMAN;
+        world.GetVehicle()->SetWheelColor(btVector3(1.f,0.f,0.f));
+    }
+    
+    world.GetVehicle()->SetThrottle(0.f);
+    world.GetVehicle()->SetBraking(0.f);
+    world.GetVehicle()->SetTargetSteering(0.f);
+}
+
 int Alvinn::HandleEvent(const SDL_Event& event)
 {
 	switch(event.type)
@@ -225,6 +264,18 @@ int Alvinn::HandleEvent(const SDL_Event& event)
 				case SDLK_2:
 					camType = World::CT_3RD;
 					break;
+                    
+                case SDLK_c:
+                    ToggleCapture();
+                    break;
+                    
+                case SDLK_t:
+                    TrainANN();
+                    break;
+                    
+                case SDLK_d:
+                    ToggleDriver();
+                    break;
 			
 				case SDLK_ESCAPE:
 					return 0;
@@ -308,37 +359,17 @@ int Alvinn::HandleEvent(const SDL_Event& event)
 
 				//toggle sampling
 				case 4:
-					if(driver == D_HUMAN)
-					{
-						sample = !sample;
-						std::cout << "Current sample count: " << numSamples << std::endl;
-					}
+					ToggleCapture();
 				break;
 				
 				//train ANN
 				case 6:
-					if(driver == D_HUMAN)
-					{
-						std::cout << "ANN is going to be trained, please wait..." << std::endl;
-						td.set_train_data(numSamples, numInputs, input, numOutputs, output);
-						td.shuffle_train_data();
-						ann.train_on_data(td, 100, 5, 0.f);
-						std::cout << std::endl << "ANN is trained." << std::endl;
-					}
+					TrainANN();
 				break;
 				
 				//toggle driver (human | ANN)
 				case 7:
-					if(driver == D_HUMAN)
-					{
-						driver = D_ANN;
-						world.GetVehicle()->SetWheelColor(btVector3(0.27f,1.f,1.f));
-					}
-					else
-					{
-						driver = D_HUMAN;
-						world.GetVehicle()->SetWheelColor(btVector3(1.f,0.f,0.f));
-					}
+					ToggleDriver();
 				break;
                     
                 default:;
@@ -481,6 +512,9 @@ void Alvinn::Run()
 			output[numSamples][1] = world.GetVehicle()->GetSpeed()/300.f;
 
 			++numSamples;
+            
+            if(numSamples % 1000 == 0)
+                std::cout << "Current sample count: " << numSamples << std::endl;
 			
 			if(numSamples == maxSamples)
 				std::cout << "Max samples reached" << std::endl;

@@ -562,10 +562,10 @@
 		1BCDB45B1477432300C43764 = {
 			isa = PBXGroup;
 			children = (
-				1BCDB8AC1477739E00C43764 /* Resources */,
+				1BCDB4701477432300C43764 /* VirtualAlvinn */,
 				1BCDB6A31477542600C43764 /* Bullet */,
 				1BCDB67A147753D900C43764 /* FANN */,
-				1BCDB4701477432300C43764 /* VirtualAlvinn */,
+				1BCDB8AC1477739E00C43764 /* Resources */,
 				1BCDB4691477432300C43764 /* Frameworks */,
 				1BCDB4671477432300C43764 /* Products */,
 			);
@@ -603,11 +603,8 @@
 		1BCDB4701477432300C43764 /* VirtualAlvinn */ = {
 			isa = PBXGroup;
 			children = (
-				1BCDB8A71477701400C43764 /* SDLMain.h */,
-				1BCDB8A81477701400C43764 /* SDLMain.m */,
-				1BCDB8A91477701400C43764 /* SDLMain.nib */,
-				1BCDB48B1477451100C43764 /* Alvinn.mm */,
 				1BCDB48C1477451100C43764 /* Alvinn.h */,
+				1BCDB48B1477451100C43764 /* Alvinn.mm */,
 				1BCDB48D1477451100C43764 /* GL_ShapeDrawer.cpp */,
 				1BCDB48E1477451100C43764 /* GL_ShapeDrawer.h */,
 				1BCDB48F1477451100C43764 /* GLDebugDrawer.cpp */,
@@ -618,6 +615,9 @@
 				1BCDB4951477451100C43764 /* Vehicle.h */,
 				1BCDB4961477451100C43764 /* World.cpp */,
 				1BCDB4971477451100C43764 /* World.h */,
+				1BCDB8A71477701400C43764 /* SDLMain.h */,
+				1BCDB8A81477701400C43764 /* SDLMain.m */,
+				1BCDB8A91477701400C43764 /* SDLMain.nib */,
 				1BCDB4761477432300C43764 /* main.cpp */,
 				1BCDB4711477432300C43764 /* Supporting Files */,
 			);
@@ -1499,6 +1499,7 @@
 				1BCDB4861477432400C43764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

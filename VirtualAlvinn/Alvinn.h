@@ -51,6 +51,9 @@ private:
 	void RenderFBO();
 	void RenderScreen();
 	void RenderRobotCamera();
+    void ToggleCapture();
+    void TrainANN();
+    void ToggleDriver();
 public:
 	Alvinn();//sets up basic config
 	~Alvinn();

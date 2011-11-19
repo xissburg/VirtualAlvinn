@@ -24,8 +24,8 @@ Vehicle::Vehicle(btDynamicsWorld* world):
 	engineForce(0.f),
 	brakingForce(0.f),
 
-	maxEngineForce(2000.f),
-	maxBrakingForce(100.f),
+	maxEngineForce(3000.f),
+	maxBrakingForce(300.f),
 
 	steering(0.f),
 	targetSteering(0.f),
