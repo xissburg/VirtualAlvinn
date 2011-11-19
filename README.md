@@ -11,9 +11,11 @@ The image of the camera is draw in an off-screen buffer using a Framebuffer Obje
 # Building and running
 
 Everything this project needs to build is included. However, you may get the following error in the Xcode's output when trying to run the project:
-`dyld: Library not loaded: @executable_path/../Frameworks/SDL.framework/Versions/A/SDL
+```
+dyld: Library not loaded: @executable_path/../Frameworks/SDL.framework/Versions/A/SDL
   Referenced from: /Users/xissburg/Library/Developer/Xcode/DerivedData/VirtualAlvinn-albzrxerrqqgdxahsvcjjylywjad/Build/Products/Debug/VirtualAlvinn.app/Contents/MacOS/VirtualAlvinn
-  Reason: image not found`
+  Reason: image not found
+```
 
 That means you don't have the SDL.framework installed in your system. To install it, simply copy the SDL.framework folder to /Library/Frameworks. You can do that by running the following command while in the root directory of this project:
 
@@ -31,14 +33,14 @@ The following image contains the gamepad configuration for my gamepad (Logitech 
 
 ## Keyboard
 
-To control the vehicle and stuff using a keyboard tap the following keys":
+To control the vehicle and stuff using a keyboard tap the following keys:
 
-Arrows Left/Right: Steering Left/Right
-Arrows Up/Down: Throttle/Reverse
-Space: Braking
-Return/Enter: Reset
-1, 2: Camera
-C: Toggle image capture
-T: Train ANN
-D: Toggle driver (Human/ANN)
-Esc: Quit
+* Arrows Left/Right: Steering Left/Right
+* Arrows Up/Down: Throttle/Reverse
+* Space: Braking
+* Return/Enter: Reset
+* 1, 2: Camera
+* C: Toggle image capture
+* T: Train ANN
+* D: Toggle driver (Human/ANN)
+* Esc: Quit
