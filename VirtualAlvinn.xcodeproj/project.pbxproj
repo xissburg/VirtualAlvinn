@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BCDB46B1477432300C43764 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCDB46A1477432300C43764 /* Cocoa.framework */; };
+		1BCDB4751477432300C43764 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BCDB4731477432300C43764 /* InfoPlist.strings */; };
+		1BCDB4771477432300C43764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDB4761477432300C43764 /* main.m */; };
+		1BCDB47B1477432300C43764 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1BCDB4791477432300C43764 /* Credits.rtf */; };
+		1BCDB47E1477432300C43764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDB47D1477432300C43764 /* AppDelegate.m */; };
+		1BCDB4811477432400C43764 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BCDB47F1477432400C43764 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BCDB4661477432300C43764 /* VirtualAlvinn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualAlvinn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCDB46A1477432300C43764 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1BCDB46D1477432300C43764 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1BCDB46E1477432300C43764 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1BCDB46F1477432300C43764 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BCDB4721477432300C43764 /* VirtualAlvinn-Info.plist */ = {isa = PBXFileReference; path = "VirtualAlvinn-Info.plist"; sourceTree = "<group>"; };
+		1BCDB4741477432300C43764 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BCDB4761477432300C43764 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BCDB4781477432300C43764 /* VirtualAlvinn-Prefix.pch */ = {isa = PBXFileReference; path = "VirtualAlvinn-Prefix.pch"; sourceTree = "<group>"; };
+		1BCDB47A1477432300C43764 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1BCDB47C1477432300C43764 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BCDB47D1477432300C43764 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BCDB4801477432400C43764 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BCDB4631477432300C43764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCDB46B1477432300C43764 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BCDB45B1477432300C43764 = {
+			isa = PBXGroup;
+			children = (
+				1BCDB4701477432300C43764 /* VirtualAlvinn */,
+				1BCDB4691477432300C43764 /* Frameworks */,
+				1BCDB4671477432300C43764 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BCDB4671477432300C43764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BCDB4661477432300C43764 /* VirtualAlvinn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BCDB4691477432300C43764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BCDB46A1477432300C43764 /* Cocoa.framework */,
+				1BCDB46C1477432300C43764 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BCDB46C1477432300C43764 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BCDB46D1477432300C43764 /* AppKit.framework */,
+				1BCDB46E1477432300C43764 /* CoreData.framework */,
+				1BCDB46F1477432300C43764 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1BCDB4701477432300C43764 /* VirtualAlvinn */ = {
+			isa = PBXGroup;
+			children = (
+				1BCDB47C1477432300C43764 /* AppDelegate.h */,
+				1BCDB47D1477432300C43764 /* AppDelegate.m */,
+				1BCDB47F1477432400C43764 /* MainMenu.xib */,
+				1BCDB4711477432300C43764 /* Supporting Files */,
+			);
+			path = VirtualAlvinn;
+			sourceTree = "<group>";
+		};
+		1BCDB4711477432300C43764 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BCDB4721477432300C43764 /* VirtualAlvinn-Info.plist */,
+				1BCDB4731477432300C43764 /* InfoPlist.strings */,
+				1BCDB4761477432300C43764 /* main.m */,
+				1BCDB4781477432300C43764 /* VirtualAlvinn-Prefix.pch */,
+				1BCDB4791477432300C43764 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BCDB4651477432300C43764 /* VirtualAlvinn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCDB4841477432400C43764 /* Build configuration list for PBXNativeTarget "VirtualAlvinn" */;
+			buildPhases = (
+				1BCDB4621477432300C43764 /* Sources */,
+				1BCDB4631477432300C43764 /* Frameworks */,
+				1BCDB4641477432300C43764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualAlvinn;
+			productName = VirtualAlvinn;
+			productReference = 1BCDB4661477432300C43764 /* VirtualAlvinn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BCDB45D1477432300C43764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1BCDB4601477432300C43764 /* Build configuration list for PBXProject "VirtualAlvinn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BCDB45B1477432300C43764;
+			productRefGroup = 1BCDB4671477432300C43764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BCDB4651477432300C43764 /* VirtualAlvinn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BCDB4641477432300C43764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCDB4751477432300C43764 /* InfoPlist.strings in Resources */,
+				1BCDB47B1477432300C43764 /* Credits.rtf in Resources */,
+				1BCDB4811477432400C43764 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BCDB4621477432300C43764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCDB4771477432300C43764 /* main.m in Sources */,
+				1BCDB47E1477432300C43764 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BCDB4731477432300C43764 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCDB4741477432300C43764 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BCDB4791477432300C43764 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCDB47A1477432300C43764 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1BCDB47F1477432400C43764 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCDB4801477432400C43764 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BCDB4821477432400C43764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1BCDB4831477432400C43764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1BCDB4851477432400C43764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VirtualAlvinn/VirtualAlvinn-Prefix.pch";
+				INFOPLIST_FILE = "VirtualAlvinn/VirtualAlvinn-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BCDB4861477432400C43764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VirtualAlvinn/VirtualAlvinn-Prefix.pch";
+				INFOPLIST_FILE = "VirtualAlvinn/VirtualAlvinn-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BCDB4601477432300C43764 /* Build configuration list for PBXProject "VirtualAlvinn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCDB4821477432400C43764 /* Debug */,
+				1BCDB4831477432400C43764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BCDB4841477432400C43764 /* Build configuration list for PBXNativeTarget "VirtualAlvinn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCDB4851477432400C43764 /* Debug */,
+				1BCDB4861477432400C43764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BCDB45D1477432300C43764 /* Project object */;
+}
