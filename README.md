@@ -21,4 +21,24 @@ That means you don't have the SDL.framework installed in your system. To install
 
 # How to play with it
 
-It is highly recommend that you use a gamepad with an analog stick to control the vehicle, because the ANN matches the steering angle with the image from the virtual camera.
+It is highly recommend that you use a gamepad with an analog stick to control the vehicle, because the ANN matches the steering angle with the image from the virtual camera. Anyway, you can also control it with the keyboard arrow keys.
+
+## Gamepad
+
+The following image contains the gamepad configuration for my gamepad (Logitech Cordless Rumblepad 2). I don't know how it will match other gamepads.
+
+![Logitech Cordless Rumblepad 2](http://xissburg.com/images/GamepadConfig.jpg)
+
+## Keyboard
+
+To control the vehicle and stuff using a keyboard tap the following keys":
+
+Arrows Left/Right: Steering Left/Right
+Arrows Up/Down: Throttle/Reverse
+Space: Braking
+Return/Enter: Reset
+1, 2: Camera
+C: Toggle image capture
+T: Train ANN
+D: Toggle driver (Human/ANN)
+Esc: Quit
