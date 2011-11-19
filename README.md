@@ -8,3 +8,17 @@ Virtual Alvinn is an implementation of the same idea in a 3D virtual world. For 
 
 The image of the camera is draw in an off-screen buffer using a Framebuffer Object (FBO). In capture mode the contents of this FBO is stored in an array. In training mode all the data that was captured is given to FANN for it to train the ANN. In ANN mode the ANN drives the vehicle.
 
+# Building and running
+
+Everything this project needs to build is included. However, you may get the following error in the Xcode's output when trying to run the project:
+`dyld: Library not loaded: @executable_path/../Frameworks/SDL.framework/Versions/A/SDL
+  Referenced from: /Users/xissburg/Library/Developer/Xcode/DerivedData/VirtualAlvinn-albzrxerrqqgdxahsvcjjylywjad/Build/Products/Debug/VirtualAlvinn.app/Contents/MacOS/VirtualAlvinn
+  Reason: image not found`
+
+That means you don't have the SDL.framework installed in your system. To install it, simply copy the SDL.framework folder to /Library/Frameworks. You can do that by running the following command while in the root directory of this project:
+
+`sudo cp -rf Frameworks/SDL.framework /Library/Frameworks/`
+
+# How to play with it
+
+It is highly recommend that you use a gamepad with an analog stick to control the vehicle, because the ANN matches the steering angle with the image from the virtual camera.
